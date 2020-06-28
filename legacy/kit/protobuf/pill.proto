@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package kit.protobuf;
+
+message Pill {
+    string ref = 1;
+    bytes payload = 2;
+}

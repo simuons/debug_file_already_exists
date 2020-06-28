@@ -1,0 +1,24 @@
+options:
+  languages: ["java"]
+  resolverType: coursier
+  resolvers:
+    - id: "mavencentral"
+      type: "default"
+      url: https://repo.maven.apache.org/maven2/
+
+  thirdPartyDirectory: dependencies/maven/artifacts
+
+dependencies:
+  io.grpc:
+    grpc-protobuf:
+      version: "1.25.0"
+      lang: java
+
+    grpc-stub:
+      version: "1.25.0"
+      lang: java
+
+  com.thesamet.scalapb:
+    scalapb-runtime-grpc_2.12:
+      version: "0.9.0"
+      lang: java
